@@ -1,0 +1,32 @@
+<[file][][]
+    <[object][][]
+        <[int][Version][210]>
+        <[vec32array][ContactSpheres][ (1.968 1.118 -1.078 0.2) (1.968 -1.118 -1.078 0.2) (-3.1 0.0 -0.476 0.1) ]>
+        <[string8][DisplayName][Zlin Z-50LX]>
+        <[string8][DescriptionTextEN][The Zlin Z-50 is an aerobatic sports airplane built by the Czechoslovakian company Zlin Aircraft. Z-50LX - variant certified in 1991 with a Lycoming AEIO-540-L1B5D engine. (from Wikipedia)
+		Converted from FlightGear by Krzysztof Kaniewski. Oryginal 3D model made by Emmanuel Baranger (3D), Pierre Geoffroy (FDM), Sebastien MARQUE (Panel), Laurent HAYVEL (Texture), Victhor (IRF Mod).]>
+		<[float64][WingSpan][8.6]>
+		<[float64][Mass][569.7]>
+		<[float64][MaximumSpeed][92.9]>
+		<[float64][MinimumSpeed][26.5]>
+        <[float64][ApproachSpeed][33.3]>
+        <[float64][CruiseSpeed]  [64.5]>
+		<[tmvector2d][NormalSpeedRange][ 26.5 70.2 ]>
+		<[tmvector2d][CautionSpeedRange][ 70.2 92.9 ]>
+		<[tmvector2d][FlapSpeedRange][ 0.0 0.0 ]>
+        <[float64][MaximumAltitude][4715.0]>
+        <[float64][CruiseAltitude] [1826.0]>
+        <[float64][QSpan][8.6]>
+        <[float64][QMass][720.0]>
+        <[float64][QSpeed][79.0]>
+        <[float64][QPower][194000.0]>
+        <[float64][QThrust][0.0]>
+        <[float64][QRange][640000.0]>
+        <[float64][QRatio][0.0]>
+        <[float64][QBuild][1300]>
+        <[float64][QVirgin][1975]>
+		<[bool][Airplane][true]>
+		<[bool][Aerobatic][true]>
+        <[string8][Pilot][]>
+    >
+>
