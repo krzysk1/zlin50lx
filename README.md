@@ -15,8 +15,10 @@ Installation
 Tips:
 Flaps button - show on/off aerobatic diagram
 
-There are other liveries in 'liveries' folder:
+There are other liveries in folders:
 
 - Red-Bull		(These liveries were made by : 102nd-YU-Nitro 2009 Updated by : Emmanuel BARANGER 2013) 
 - Red-Bull2     (These liveries were made by : Laurent HAYVEL 2008/2011 Updated by : Emmanuel BARANGER 2013)
 - Zlin			(These liveries were made by : Alex KERR 2009 Updated by : Emmanuel BARANGER 2013)
+
+Repaint kit and other resources are available here: https://github.com/FGMEMBERS/Zlin-50lx
