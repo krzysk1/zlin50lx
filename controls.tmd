@@ -1,6 +1,212 @@
 <[file][][]
     <[modelmanager][][]
         <[pointer_list_tmcontrol][ControlObjects][]
+		
+ 			// pressure setting
+            <[control_cylinder][PressureSetting][2]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 1.034 0.212 0.125 ]>
+                <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepAngle][0.02]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][PressureSetting]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.004]>
+                <[float64][Length][0.011]>
+            >
+		    // Stopper knob
+            <[control_cylinder][WatchKnob][2]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 1.034 0.123 0.22 ]>
+                <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepAngle][0.02]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][WatchKnob]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.004]>
+                <[float64][Length][0.011]>
+            >
+			// Accelerometer rest button
+            <[control_cylinder][AccelRsetButton][2]
+                <[string8][Type][Button]>
+                <[vector3_float64][R0][ 1.036 -0.189 0.132 ]>
+                <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepAngle][0.02]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][AccelRsetButton]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.005]>
+                <[float64][Length][0.008]>
+            >
+			// magnetos
+            <[control_cylinder][Magnetos][65]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][1.041 0.2019 0.052]>
+                <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepAngle][0.4]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Controls.Magnetos]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][0.1]>
+                >
+                //<[control_message][OnPush][]
+                //    <[string8][Message][Controls.Magnetos]>
+                //    <[string8][Qualifiers][step]>
+                //    <[float64][Value][1.0]>
+                //>
+                <[float64][Radius][0.02]>
+                <[float64][Length][0.02]>
+            >
+			// fuel selector
+            <[control_cylinder][FuelSelector][65]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][1.049 0.03 -0.006]>
+                <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepAngle][0.4]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Controls.FuelSelector]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][0.1]>
+                >
+                //<[control_message][OnPush][]
+                //    <[string8][Message][Controls.FuelSelector]>
+                //    <[string8][Qualifiers][step]>
+                //    <[float64][Value][1.0]>
+                //>
+                <[float64][Radius][0.015]>
+                <[float64][Length][0.01]>
+            >					
+			// pump
+            <[control_cylinder][PumpSwitch][1]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 1.049 0.158 0.0536 ]>
+                <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Electrical.Pump]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.002]>
+                <[float64][Length][0.011]>
+            >
+			// smoke
+            <[control_cylinder][SmokeSwitch][1]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 1.049 0.14 0.0536 ]>
+                <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Electrical.Smoke]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.002]>
+                <[float64][Length][0.011]>
+            >
+			// main
+            <[control_cylinder][MainSwitch][1]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 1.049 0.103 0.0536 ]>
+                <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Electrical.MainSwitch]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.002]>
+                <[float64][Length][0.011]>
+            >	
+			// battery
+            <[control_cylinder][BatterySwitch][1]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 1.049 -0.096 0.0536 ]>
+                <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Electrical.Battery]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.002]>
+                <[float64][Length][0.011]>
+            >
+			// generator
+            <[control_cylinder][GeneratorSwitch][1]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 1.049 -0.114 0.0536 ]>
+                <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Electrical.Generator]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.002]>
+                <[float64][Length][0.011]>
+            >
+			// instrument light
+            <[control_cylinder][InstrumentLightSwitch][1]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 1.049 -0.132 0.0536 ]>
+                <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Electrical.Lights.Instruments]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.002]>
+                <[float64][Length][0.011]>
+            >
+			// navigation light
+            <[control_cylinder][NavigationLightSwitch][1]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 1.049 -0.149 0.0536 ]>
+                <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Electrical.Lights.Navigation]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.002]>
+                <[float64][Length][0.011]>
+            >
+			// landing light
+            <[control_cylinder][LandingLightSwitch][1]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 1.049 -0.167 0.0536 ]>
+                <[matrix3_float64][B0][ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Electrical.Lights.Landing]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.002]>
+                <[float64][Length][0.011]>
+            >			
         >
     >
 >
