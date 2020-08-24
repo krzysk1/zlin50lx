@@ -170,7 +170,7 @@
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
                 <[float64][StepDistance][0.01]>
                 <[control_message][OnStep][]
-                    <[string8][Message][Electrical.Lights.Instruments]>
+                    <[string8][Message][Controls.Lighting.Instruments]>
                     <[string8][Qualifiers][step]>
                     <[float64][Value][-1.0]>
                 >
@@ -185,7 +185,7 @@
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
                 <[float64][StepDistance][0.01]>
                 <[control_message][OnStep][]
-                    <[string8][Message][Electrical.Lights.Navigation]>
+                    <[string8][Message][Controls.Lighting.Navigation]>
                     <[string8][Qualifiers][step]>
                     <[float64][Value][-1.0]>
                 >
@@ -200,7 +200,7 @@
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
                 <[float64][StepDistance][0.01]>
                 <[control_message][OnStep][]
-                    <[string8][Message][Electrical.Lights.Landing]>
+                    <[string8][Message][Controls.Lighting.Landing]>
                     <[string8][Qualifiers][step]>
                     <[float64][Value][-1.0]>
                 >
