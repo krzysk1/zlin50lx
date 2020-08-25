@@ -998,6 +998,9 @@
                 <[float64][Radius][0.06]>
                 <[float64][Limit][0.022]>
             >
+            <[output][BalanceIndicatorDeflection][]
+                <[string8][Input][BalanceIndicator.Output]>
+            >				
             <[output][RateOfTurn][]
                 <[string8][Input][TurnCoordinator.RateOfTurn]>
             >
@@ -1510,10 +1513,15 @@
                 <[tmvector3d][Axis][-1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][1.04 0.0 0.153]>
             >
-            <[rigidbodygraphics][BalanceIndicatorBall][]
+            <[hingedbodygraphics][BalanceIndicatorBall][]
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][GeometryList][ TurnBall ]>
-                <[uint32][PositionID][BalanceIndicatorBall.R]>
-            >
+                <[tmvector3d][Axis][ -1.0 0.0 0.0 ]>
+                <[tmvector3d][Pivot][ 1.0450 0.0 0.4385 ]>
+                <[float64][AngleMax][0.17]>
+                <[string8][AngleID][BalanceIndicatorDeflection.Output]>
+            >			
             <[graphics_input][turn_Ball_5Input][]
                 <[uint32][InputID][SideslipAngle.Output]>
                 <[float64][Scaling][10.0]>
