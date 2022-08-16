@@ -1,5 +1,5 @@
 <[file][][]    <[object][][]
-        <[int][Version][220]>        <[vec32array][ContactSpheres][ (1.968 1.118 -1.078 0.2) (1.968 -1.118 -1.078 0.2) (-3.1 0.0 -0.476 0.1) ]>
+        <[int][Version][220]>        <[vec32array][ContactSpheres][ (0.718 1.118 -1.078 0.2) (0.718 -1.118 -1.078 0.2) (-4.349 0 -0.4756 0.1) ]>
         <[string8][ICAO][Z50]>        <[string8][DisplayName][Zlin Z-50]>
         <[string8][DisplayNameFull][Zlin Z-50LX]>
         <[localized_text_list][Descriptions][]            <[localized_text][][]                <[string8][Language][en]>                <[string8][Text][The Zlin Z-50 is an aerobatic sports airplane built by the Czechoslovakian company Zlin Aircraft. Z-50LX - variant certified in 1991 with a Lycoming AEIO-540-L1B5D engine. (from Wikipedia) Converted from FlightGear by Krzysztof Kaniewski. Oryginal 3D model made by Emmanuel Baranger (3D), Pierre Geoffroy (FDM), Sebastien MARQUE (Panel), Laurent HAYVEL (Texture), Victhor (IRF Mod).]>			>
@@ -18,6 +18,6 @@
         <[float64][MaximumRange][640000.0]>
         <[uint][UnitsBuilt][1300]>
         <[uint][EngineCount][0]>        <[uint][Year][1975]>
-        <[string8][Tags][ airplane general_aviation aerobatic piston gear tailgear ]>        <[string8][Pilot][]>
+        <[string8][Tags][ airplane general_aviation aerobatic piston gear tailgear ]>        <[string8][Pilot][pilot_jason]>
     >
 >
