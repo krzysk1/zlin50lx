@@ -12,7 +12,7 @@
         <[pointer_list_tmuniverse][DynamicObjects][]
             <[telemetry][Telemetry][]
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][LookAtPosition][-0.447 0 0]>
+                <[tmvector3d][LookAtPosition][-0.1 0 0]> // mass: 714.8  cm=(-0.124 0.000 -0.022)
             >
 
             // Cameras
@@ -636,7 +636,7 @@
                 <[string8][Input][FisheInput.Output]>
                 <[float64][OutputSpeed][1.0]>
                 <[float64][Position][1.0]>
-                <[float64array][InputPosition][ 0.0 0.1 ]>
+                <[float64array][InputPosition][ 0.0 0.5 ]>
                 <[float64array][OutputPosition][ 1.0 0.0 ]>
             >
             <[output_free][ServoFisheOutput][]
@@ -1399,9 +1399,8 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][InputID][ServoFishe.Output]>
-                <[tmvector3d][Axis][1.0 0.0 0.0]>
-                <[float64][Scaling][-0.05]>
-//                 <[float64][Pos1][ 0.05]>
+                <[tmvector3d][Axis][-1.0 0.0 0.0]>
+                <[float64][Scaling][0.05]>
             >
             <[rigidbodygraphics][MagneticCompassCard][]
                 <[string8][GeometryList][ Ball ]>

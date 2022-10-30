@@ -15,6 +15,8 @@
         <[bool][FlyByWire][true]>
         <[bool][TailDragger][true]>
         <[bool][ParkingBrake][true]>
+        <[int][EngineCount][1]>
+        <[bool][Piston][true]>		
         <[string8][AutoThrottleType][MOVING]>
         <[float64][ThrottleTrimFactor][0.5]>
         <[float64][ElevatorGain][0.4]>
@@ -28,5 +30,8 @@
         <[float64][YawTrimFactor][0.1]>
         <[float64][FlareHeightScaling][0.5]>
         <[float64][FlareExpectedNoseDrop][0.1]>
+        <[float64][StarterMaximumTime][3.0]>
+        <[float64][RotationSpeedNormalizedClimb] [0.9259]>
+        <[float64][RotationSpeedNormalizedCruise][0.9259]>
     >
 >
