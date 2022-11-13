@@ -1,13 +1,27 @@
-<[file][][]    <[object][][]
-        <[int][Version][220]>        <[vec32array][ContactSpheres][ (0.718 1.118 -1.078 0.2) (0.718 -1.118 -1.078 0.2) (-4.349 0 -0.4756 0.1) ]>
-        <[string8][ICAO][Z50]>        <[string8][DisplayName][Zlin Z-50]>
+<[file][][]
+    <[object][][]
+        <[int][Version][220]>
+        <[vec32array][ContactSpheres][ (0.718 1.118 -1.078 0.2) (0.718 -1.118 -1.078 0.2) (-4.349 0 -0.4756 0.1) ]>
+        <[string8][ICAO][Z50]>
+        <[string8][DisplayName][Zlin Z-50]>
         <[string8][DisplayNameFull][Zlin Z-50LX]>
-        <[localized_text_list][Descriptions][]            <[localized_text][][]                <[string8][Language][en]>                <[string8][Text][The Zlin Z-50 is an aerobatic sports airplane built by the Czechoslovakian company Zlin Aircraft. Z-50LX - variant certified in 1991 with a Lycoming AEIO-540-L1B5D engine. (from Wikipedia) Converted from FlightGear by Krzysztof Kaniewski. Oryginal 3D model made by Emmanuel Baranger (3D), Pierre Geoffroy (FDM), Sebastien MARQUE (Panel), Laurent HAYVEL (Texture), Victhor (IRF Mod).]>			>
-        >		<[float64][WingSpan][8.6]>
-		<[float64][MaximumAirspeed][92.9]>
-		<[float64][MinimumAirspeed][26.5]>
+        <[localized_text_list][Descriptions][]
+            <[localized_text][][]
+                <[string8][Language][en]>
+                <[string8][Text][The Zlin Z-50 is an aerobatic sports airplane built by the Czechoslovakian company Zlin Aircraft. Z-50LX - variant certified in 1991 with a Lycoming AEIO-540-L1B5D engine. (from Wikipedia) Converted from FlightGear by Krzysztof Kaniewski. Oryginal 3D model made by Emmanuel Baranger (3D), Pierre Geoffroy (FDM), Sebastien MARQUE (Panel), Laurent HAYVEL (Texture), Victhor (IRF Mod).]>
+			>
+            <[localized_text][][]
+                <[string8][Language][de]>
+                <[string8][Text][Die Zlín Z-50 ist ein einmotoriges Kunstflugzeug, welches vom tschechoslowakischen Flugzeughersteller Zlín produziert wurde. Konvertiert von FlightGear durch Krzysztof Kaniewski. 3d-Modell erstellt von Emmanuel Baranger (3D), Pierre Geoffroy (FDM), Sebastien MARQUE (Panel), Laurent HAYVEL (Texture), Victhor (IRF Mod).]>
+			>
+        >
+		<[float64][WingSpan][8.6]>
+		<[float64][MaximumAirspeed] [92.9]>
+		<[float64][MaximumSpeed]    [92.9]>
+		<[float64][MinimumAirspeed] [26.5]>
         <[float64][ApproachAirspeed][33.3]>
         <[float64][CruiseAirspeed]  [64.5]>
+        <[float64][CruiseSpeed]     [64.5]>
 		<[tmvector2d][NormalAirspeedRange][ 26.5 70.2 ]>
 		<[tmvector2d][CautionAirspeedRange][ 70.2 92.9 ]>
 		<[tmvector2d][FlapAirspeedRange][ 0.0 0.0 ]>
@@ -17,7 +31,9 @@
         <[float64][EnginePower][194000.0]>
         <[float64][MaximumRange][640000.0]>
         <[uint][UnitsBuilt][1300]>
-        <[uint][EngineCount][0]>        <[uint][Year][1975]>
-        <[string8][Tags][ airplane general_aviation aerobatic piston gear tailgear ]>        <[string8][Pilot][pilot_jason]>
+        <[uint][EngineCount][0]>
+        <[uint][Year][1975]>
+        <[string8][Tags][ airplane general_aviation aerobatic piston gear tailgear ]>
+        <[string8][Pilot][pilot_jason]>
     >
 >

@@ -5,7 +5,7 @@
 	// YASim model: Pierre Geoffroy (FDM)
 	// 3D Design: Emmanuel Baranger (3D), Sebastien MARQUE (Panel), Laurent HAYVEL (Texture), Victhor (IRF Mod)
     // Converted from FlightGear by Krzysztof Kaniewski
-	// Date: Dec 2015; Jul 2019; Aug 2020
+	// Date: Dec 2015; Jul 2019; Nov 2020
 	//-------------------------------------
 
     <[modelmanager][][]
@@ -570,6 +570,11 @@
                 <[string8][Input][ElevatorTrimInput.Output]>
                 <[string8][Message][Aircraft.Trim]>
             >
+            <[sender][SenderPitchTrimPosition][]
+                <[string8][Input][ElevatorTrimInput.Output]>
+                <[string8][Message][Aircraft.PitchTrim]>
+                <[string8][Qualifiers][ normalized ]>
+            >			
             <[output_free][ElevatorTrimInputOutput][]
                 <[string8][Input][ElevatorTrimInput.Output]>
             >
