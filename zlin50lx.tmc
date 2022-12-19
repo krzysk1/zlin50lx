@@ -25,13 +25,13 @@
 		<[tmvector2d][NormalAirspeedRange][ 26.5 70.2 ]>
 		<[tmvector2d][CautionAirspeedRange][ 70.2 92.9 ]>
 		<[tmvector2d][FlapAirspeedRange][ 0.0 0.0 ]>
-        <[float64][MaximumAltitude][4715.0]>
+        <[float64][MaximumAltitude][8000.0]>
         <[float64][CruiseAltitude] [1826.0]>
         <[float64][MaximumTakeoffMass][720.0]>
         <[float64][EnginePower][194000.0]>
-        <[float64][MaximumRange][640000.0]>
-        <[uint][UnitsBuilt][1300]>
-        <[uint][EngineCount][0]>
+        <[float64][MaximumRange][250000.0]>
+        <[uint][UnitsBuilt][50]>
+        <[uint][EngineCount][1]>
         <[uint][Year][1975]>
         <[string8][Tags][ airplane general_aviation aerobatic piston gear tailgear ]>
         <[string8][Pilot][pilot_jason]>

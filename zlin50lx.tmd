@@ -5,7 +5,7 @@
 	// YASim model: Pierre Geoffroy (FDM)
 	// 3D Design: Emmanuel Baranger (3D), Sebastien MARQUE (Panel), Laurent HAYVEL (Texture), Victhor (IRF Mod)
     // Converted from FlightGear by Krzysztof Kaniewski
-	// License	GPLv2+	
+	// License	GPLv2+
 	// Date: Dec 2015; Jul 2019; Nov 2020
 	//-------------------------------------
 
@@ -173,8 +173,8 @@
                 <[string8][Body1][LeftGear]>
                 <[tmvector3d][R0][0.534 0.37 -0.528]>
                 <[tmvector3d][X0][1.0 0.0 0.0]>
-                <[float64][Kp][15000.0]>
-                <[float64][Kd][100.0]>
+                <[float64][Kp][55000.0]>
+                <[float64][Kd][500.0]>
                 <[float64][InputPosition][0.02]>
                 <[uint32][Type][0]>
             >
@@ -189,8 +189,8 @@
                 <[string8][Body1][RightGear]>
                 <[tmvector3d][R0][0.534 -0.37 -0.528]>
                 <[tmvector3d][X0][1.0 0.0 0.0]>
-                <[float64][Kp][15000.0]>
-                <[float64][Kd][100.0]>
+                <[float64][Kp][55000.0]>
+                <[float64][Kd][500.0]>
                 <[float64][InputPosition][-0.02]>
                 <[uint32][Type][0]>
             >
@@ -575,7 +575,7 @@
                 <[string8][Input][ElevatorTrimInput.Output]>
                 <[string8][Message][Aircraft.PitchTrim]>
                 <[string8][Qualifiers][ normalized ]>
-            >			
+            >
             <[output_free][ElevatorTrimInputOutput][]
                 <[string8][Input][ElevatorTrimInput.Output]>
             >
@@ -1285,7 +1285,7 @@
                 <[uint32][PositionID][LeftWing.R]>
                 <[uint32][OrientationID][LeftWing.Q]>
                 <[uint32][InputID][ServoLeftAileron.Output]>
-                <[tmvector3d][Axis][ 0.047101 0.998609 0.023709 ]>
+                <[tmvector3d][Axis][ -0.047101 -0.998609 -0.023709 ]>
                 <[tmvector3d][Pivot][-0.52 4.197 -0.339]>
             >
             <[hingedbodygraphics][RightAileron][]
@@ -1293,7 +1293,7 @@
                 <[uint32][PositionID][RightWing.R]>
                 <[uint32][OrientationID][RightWing.Q]>
                 <[uint32][InputID][ServoRightAileron.Output]>
-                <[tmvector3d][Axis][ -0.047101 0.998609 -0.023709 ]>
+                <[tmvector3d][Axis][ 0.047101 -0.998609 0.023709 ]>
                 <[tmvector3d][Pivot][-0.669 -1.038 -0.414]>
             >
             <[hingedbodygraphics][Elevator][]
@@ -1434,7 +1434,7 @@
             <[graphics_linear_interpolation][TurnPtrTipMapping][]
                 <[string8][Input][TurnPtrTipInput.Output]>
                 <[tmvector2d][Map][(-1.1 -0.35) (1.1 0.35)]>
-            >			
+            >
             <[hingedbodygraphics][TurnPtrTip][]
                 <[string8][GeometryList][ PtrTip ]>
                 <[uint32][PositionID][Fuselage.R]>
@@ -1451,7 +1451,7 @@
             <[graphics_linear_interpolation][BalanceIndicatorBallMapping][]
                 <[string8][Input][BalanceIndicatorBallnput.Output]>
                 <[tmvector2d][Map][(-1.1 -0.35) (1.1 0.35)]>
-            >			
+            >
             <[hingedbodygraphics][BalanceIndicatorBall][]
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
@@ -3761,7 +3761,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][propeller.wav]>
                 <[bool][External][false]>
-                <[tmvector3d][R0][1.8 0 0.0]>				
+                <[tmvector3d][R0][1.8 0 0.0]>
             >
             <[soundloop][RPMWindLoopExt][]
                 <[string8][InputVolume][RPMVolumeWind.Output]>
@@ -3770,7 +3770,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][propeller.wav]>
                 <[bool][Internal][false]>
-                <[tmvector3d][R0][1.8 0 0.0]>				
+                <[tmvector3d][R0][1.8 0 0.0]>
             >
 
             // starter cranking
@@ -3793,7 +3793,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][engstart.wav]>
                 <[bool][External][false]>
-                <[tmvector3d][R0][1.6 0 0.0]>				
+                <[tmvector3d][R0][1.6 0 0.0]>
             >
             <[sound_multi][IgnitionSoundExt][]
                 <[string8][InputTrigger][IgnitionSoundInput.Output]>
@@ -3803,7 +3803,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][engstart.wav]>
                 <[bool][Internal][false]>
-                <[tmvector3d][R0][1.6 0 0.0]>				
+                <[tmvector3d][R0][1.6 0 0.0]>
             >
 
             // engine loop
@@ -3832,7 +3832,7 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][engine_idle.wav]>
-                <[tmvector3d][R0][1.6 0 0.0]>				
+                <[tmvector3d][R0][1.6 0 0.0]>
             >
             <[soundloop][RPMRunLoopInt][]
                 <[string8][InputVolume][RPMVolumeRun.Output]>
@@ -3841,7 +3841,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][engine_int.wav]>
                 <[bool][External][false]>
-                <[tmvector3d][R0][1.6 0 0.0]>				
+                <[tmvector3d][R0][1.6 0 0.0]>
             >
             <[soundloop][RPMRunLoopExt][]
                 <[string8][InputVolume][RPMVolumeRun.Output]>
@@ -3850,7 +3850,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][engine_ext.wav]>
                 <[bool][Internal][false]>
-                <[tmvector3d][R0][1.6 0 0.0]>				
+                <[tmvector3d][R0][1.6 0 0.0]>
             >
             // wheels
             <[soundinput][GroundRollLoadFront][]
