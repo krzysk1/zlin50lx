@@ -35,7 +35,7 @@
 
             <[rigidbody][Fuselage][]
                 <[float64][Mass][288.7]>
-                <[tmvector3d][InertiaLength][6.279 1.008 1.008]>
+                <[tmvector3d][InertiaLength][6.0 1.0 1.0]>
                 <[tmvector3d][R0][-1.25 0 -0.0225]>
                 <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
             >
@@ -164,7 +164,7 @@
 
             <[rigidbody][LeftGear][]
                 <[float64][Mass][13]>
-                <[tmvector3d][InertiaLength][ 0.26 0.2 1.0 ]>
+                <[tmvector3d][InertiaLength][ 0.26 1.0 0.2 ]>
                 <[tmvector3d][R0][0.718 0.68 -0.71625]>
                 <[tmmatrix3d][B0][-1.0 0.0 0.0 0.0 0.5 -0.866025 0.0 -0.866025 -0.5]>
             >
@@ -180,7 +180,7 @@
             >
             <[rigidbody][RightGear][]
                 <[float64][Mass][13]>
-                <[tmvector3d][InertiaLength][ 0.26 0.2 1.0 ]>
+                <[tmvector3d][InertiaLength][ 0.26 1.0 0.2 ]>
                 <[tmvector3d][R0][0.718 -0.68 -0.71625]>
                 <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 0.5 0.866025 0.0 -0.866025 0.5]>
             >
