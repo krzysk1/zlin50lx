@@ -1,9 +1,11 @@
 # zlin50lx
 Zlin Z-50LX for Aerofly FS4
 
+NOTE: This model won't be developed because it'll be replaced by another Z-50L conversion originally created for FSX by the Tim Piglet Conrad.
+
 The Zlin Z-50 is an aerobatic sports airplane built by the Czechoslovakian company Zlin Aircraft. Z-50LX - variant certified in 1991 with a Lycoming AEIO-540-L1B5D engine. (From Wikipedia, the free encyclopedia)
 
-This is free add-on for Aerofly FS4 created by Krzysztof Kaniewski, 2015, 2019
+This is free add-on for Aerofly FS4 created by Krzysztof Kaniewski, 2015, 2019, 2022
 3D model by Emmanuel Baranger (3D), Pierre Geoffroy (FDM), Sebastien MARQUE (Panel), Laurent HAYVEL (Texture), Victhor (IRF Mod) January, 03, 2008. Downloaded from http://helijah.free.fr/flightgear/hangar.htm
 Thanks to him.
 
