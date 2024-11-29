@@ -1,7 +1,7 @@
 # zlin50lx
 Zlin Z-50LX for Aerofly FS4
 
-NOTE: This model won't be developed because it'll be replaced by another Z-50L conversion originally created for FSX by the Tim Piglet Conrad.
+**THE MODEL HAS NO FUNCTIONAL COCKPIT AND NO FURTHER DEVELOPMENT IS PLANNED**
 
 The Zlin Z-50 is an aerobatic sports airplane built by the Czechoslovakian company Zlin Aircraft. Z-50LX - variant certified in 1991 with a Lycoming AEIO-540-L1B5D engine. (From Wikipedia, the free encyclopedia)
 
@@ -33,3 +33,5 @@ There are other liveries in folders:
 # Resources
 
 Repaint kit and other resources are available here: https://github.com/FGMEMBERS/Zlin-50lx
+
+NOTE: This model won't be developed because it'll be replaced by another Z-50L conversion originally created for FSX by the Tim Piglet Conrad.
